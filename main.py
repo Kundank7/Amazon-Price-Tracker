@@ -34,7 +34,7 @@ if time.hour == 16:
         connection = smtplib.SMTP(my_smtp,port=587)
         connection.starttls()
         connection.login(user=my_mail, password=my_pass)
-        connection.sendmail(from_addr=my_mail, to_addrs="myself100kk@gmail.com", msg=f"subject:Price Drop Alert \n\n Price Droped {price}")
+        connection.sendmail(from_addr=my_mail, to_addrs="yourmail@gmail.com", msg=f"subject:Price Drop Alert \n\n Price Droped {price}")
         connection.close()
     else:
         print("Check Your Code")
